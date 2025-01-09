@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GidraTop</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -26,650 +27,652 @@
         </div>
         <div class="header__search">
             <div class="header__search--catalog">
-                <img src="svg/catalog_icon.svg" alt="catalog">
+                <img src="svg/catalog_icon.svg" alt="catalog" >
                 <p>Каталог товаров</p>
             </div>
-            <input type="text" placeholder="Поиск по каталогу">
-            <button type="submit"><img src="svg/icon_search.svg" alt="search"></button>
+            <div class="header__search--input">
+                <input type="text" placeholder="Поиск товаров и брендов">
+                <button class="header__search--btn" type="submit"><img src="svg/icon_search.svg" alt="search"></button>
+            </div>
+
         </div>
     </section>
     <section class="hero">
-        <div class="hero__btn--nav">
-            <button type="button" class="hero__btn--nav-left"><img src="svg/hero_btn-left.svg" alt="left"></button>
-            <button type="button" class="hero__btn--nav-right"><img src="svg/hero_btn-right.svg" alt="right"></button>
-        </div>
-        <div class="hero__stock">
+        <div class="hero-wrapper">
+            <div class="hero__btn--nav">
+                <button type="button" class="hero__btn--nav-left"><img src="svg/hero_btn-left.svg" alt="left"></button>
+                <button type="button" class="hero__btn--nav-right"><img src="svg/hero_btn-right.svg" alt="right"></button>
+            </div>
             <img src="img/hero_img.jpg" alt="img" class="hero__img">
-            <p class="hero__stock--title">Скидки на мебель для ванной комнаты <span class="hero__stock--sale">до 10%</span></p>
-            <button class="hero__stock--btn">Подробнее</button>
+            <div class="hero__stock">
+                <p class="hero__stock--text">Скидки на мебель для ванной комнаты </p>
+                <span class="hero__stock--sale">до 10%</span>
+                <button class="hero__stock--btn">Подробнее</button>
+            </div>
         </div>
         <div class="hero__pagination">
-            <a href="#" class="hero__pagination--linc1">1</a>
-            <a href="#" class="hero__pagination--linc1">2</a>
-            <a href="#" class="hero__pagination--linc1">3</a>
-            <a href="#" class="hero__pagination--linc1">4</a>
-            <a href="#" class="hero__pagination--linc1">5</a>
-            <a href="#" class="hero__pagination--linc1">6</a>
-            <a href="#" class="hero__pagination--linc1">7</a>
-            <a href="#" class="hero__pagination--linc1">8</a>
-            <a href="#" class="hero__pagination--linc1">...</a>
+            <button type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
         </div>
     </section>
-    <section class="stocks">
-        <div class="stocks__title">
-            <p>Акции</p>
-            <p><a href="#">Все акции</a></p>
-        </div>
-        <ul class="stocks__list">
-            <li class="stocks__item">
-                <img src="img/winter_stock.jpg" alt="stocks image">
-            </li>
-            <li class="stocks__item">
-                <img src="img/winter_stock.jpg" alt="stocks__img">
-            </li>
-        </ul>
-        <div class="stocks__navigation">
-            <button type="button" class="stocks__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="stocks__pagination--links">
-                <a href="#" class="stocks__pagination--linc1">1</a>
-                <a href="#" class="stocks__pagination--linc1">2</a>
-                <a href="#" class="stocks__pagination--linc1">3</a>
-                <a href="#" class="stocks__pagination--linc1">4</a>
-                <a href="#" class="stocks__pagination--linc1">5</a>
-                <a href="#" class="stocks__pagination--linc1">6</a>
-                <a href="#" class="stocks__pagination--linc1">7</a>
-                <a href="#" class="stocks__pagination--linc1">8</a>
-                <a href="#" class="stocks__pagination--linc1">...</a>
-            </div>
-            <button type="button" class="stocks__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="categories">
-        <h2 class="category">Популярные категории</h2>
-        <ul class="category__list">
-            <li class="category__item">
-                <img src="img/rakovina.png" alt="Раковина">
-                <p class="category__name">Раковина</p>
-            </li>
-            <li class="category__item">
-                <img src="img/ynitaz.png" alt="Унитаз">
-                <p class="category__name">Унитазы</p>
-            </li>
-            <li class="category__item">
-                <img src="img/kran.png" alt="Смесители">
-                <p class="category__name">Смесители</p>
-            </li>
-            <li class="category__item">
-                <img src="img/installation.png" alt="Системы инсталяции">
-                <p class="category__name">Системы инсталяции</p>
-            </li>
-            <li class="category__item">
-                <img src="img/bath.png" alt="Ванны">
-                <p class="category__name">Ванны</p>
-            </li>
-            <li class="category__item">
-                <img src="img/bath_furniture.png" alt="">
-                <p class="category__name">Мебель для ванных комнат</p>
-            </li>
-            <li class="category__item">
-                <img src="img/dush.png" alt="Душевые углы и ограждения">
-                <p class="category__name">Душевые углы и ограждения</p>
-            </li>
-            <li class="category__item">
-                <img src="img/acsessuar.png" alt="Аксессуары для ванных комнат">
-                <p class="category__name">Аксессуары для ванных комнат</p>
-            </li>
-        </ul>
-    </section>
-    <section class="bestsellers">
-        <ul class="bestsellers-list">
-            <li class="bestsellers-item">
-                <p class="bestsellers-item__mark">Хит продаж</p>
-                <img src="img/install_bestseller.jpg" alt="Хит продаж">
-                <p class="bestsellers-name">Наименование</p>
-                <p class="bestsellers-brand">Бренд:</p>
-                <p class="bestsellers-country">Страна:</p>
-                <p class="bestsellers-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="bestseller-price__list">
-                    <li class="bestseller-price__item">
-                        <p class="bestseller-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="bestseller-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="bestseller-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="bestseller-price__btn">В корзину</button>
-            </li>
-            <li class="bestsellers-item">
-                <p class="bestsellers-item__mark">Новинка</p>
-                <img src="img/krepezh_bestseller.jpg" alt="Новинка">
-                <p class="bestsellers-name">Наименование</p>
-                <p class="bestsellers-brand">Бренд:</p>
-                <p class="bestsellers-country">Страна:</p>
-                <p class="bestsellers-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="bestseller-price__list">
-                    <li class="bestseller-price__item">
-                        <p class="bestseller-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="bestseller-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="bestseller-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="bestseller-price__btn">В корзину</button>
-            </li>
-        </ul>
-        <div class="bestsellers__navigation">
-            <button type="button" class="bestsellers__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="bestsellers__pagination--links">
-                <a href="#" class="bestsellers__pagination--linc1">1</a>
-                <a href="#" class="bestsellers__pagination--linc1">2</a>
-                <a href="#" class="bestsellers__pagination--linc1">3</a>
-                <a href="#" class="bestsellers__pagination--linc1">4</a>
-                <a href="#" class="bestsellers__pagination--linc1">5</a>
-                <a href="#" class="bestsellers__pagination--linc1">6</a>
-                <a href="#" class="bestsellers__pagination--linc1">7</a>
-                <a href="#" class="bestsellers__pagination--linc1">8</a>
-                <a href="#" class="bestsellers__pagination--linc1">...</a>
-            </div>
-            <button type="button" class="bestsellers__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="about">
-        <img src="img/about_fone.jpg" alt="fone">
-        <ul class="about__list">
-            <li class="about__item">
-                <p class="about__brands">Брендов работают с нами</p>
-            </li>
-            <li class="about__item">
-                <p class="about__naming">Наименований продукции</p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">ДОСТАВКА</h3>
-                <img src="svg/transport%204.svg" alt="icon">
-                <p class="about__item--title">Доставим товар в удобное для вас время</p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">САМОВЫВОЗ</h3>
-                <img src="svg/car%203.svg" alt="icon">
-                <p class="about__item--title">Вы можете самостоятельно забрать заказ в пункте самовывоза</p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">КЛИЕНТСКИЙ СЕРВИС</h3>
-                <img src="svg/support%203.svg" alt="icon">
-                <p class="about__item--title">Оказываем поддержку на всех этапах покупки товара</p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">ГАРАНТИЯ КАЧЕСТВА</h3>
-                <img src="svg/like.svg" alt="icon">
-                <p class="about__item--title">Соответствуем требованиям и стандартам качества</p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ</h3>
-                <img src="svg/dashboard%202.svg" alt="icon">
-                <p class="about__item--title">У нас найдется все </p>
-            </li>
-            <li class="about__item">
-                <h3 class="about__item--name">АКЦИИ И СКИДКИ</h3>
-                <img src="svg/akcii.svg" alt="icon">
-                <p class="about__item--title">Постоянным клиентам акции и скидки</p>
-            </li>
-        </ul>
-    </section>
-    <section class="new">
-        <ul class="new-list">
-            <li class="new-item">
-                <p class="new-item__mark">Хит продаж</p>
-                <img src="img/install_bestseller.jpg" alt="Хит продаж">
-                <p class="new-name">Наименование</p>
-                <p class="new-brand">Бренд:</p>
-                <p class="new-country">Страна:</p>
-                <p class="new-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="new-price__list">
-                    <li class="new-price__item">
-                        <p class="new-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="new-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="new-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="new-price__btn">В корзину</button>
-            </li>
-            <li class="new-item">
-                <p class="new-item__mark">Новинка</p>
-                <img src="img/krepezh_bestseller.jpg" alt="Новинка">
-                <p class="new-name">Наименование</p>
-                <p class="new-brand">Бренд:</p>
-                <p class="new-country">Страна:</p>
-                <p class="new-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="new-price__list">
-                    <li class="new-price__item">
-                        <p class="new-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="new-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="new-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="new-price__btn">В корзину</button>
-            </li>
-        </ul>
-        <div class="new__navigation">
-            <button type="button" class="bestsellers__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="new__pagination--links">
-                <a href="#" class="new__pagination--linc1">1</a>
-                <a href="#" class="new__pagination--linc1">2</a>
-                <a href="#" class="new__pagination--linc1">3</a>
-                <a href="#" class="new__pagination--linc1">4</a>
-                <a href="#" class="new__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="new__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="conditions">
-        <ul class="conditions-list">
-            <li class="conditions-item">
-                <img src="img/brands.jpg" alt="icon">
-                <p class="conditions-item__title">Бренды</p>
-            </li>
-            <li class="conditions-item">
-                <img src="img/akcii.jpg" alt="icon">
-                <p class="conditions-item__title">Акции</p>
-            </li>
-            <li class="conditions-item">
-                <img src="img/pay.jpg" alt="icon">
-                <p class="conditions-item__title">Оплата</p>
-            </li>
-        </ul>
-        <div class="conditions__navigation">
-            <button type="button" class="bestsellers__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="conditions__pagination--links">
-                <a href="#" class="conditions__pagination--linc1">1</a>
-                <a href="#" class="conditions__pagination--linc1">2</a>
-                <a href="#" class="conditions__pagination--linc1">3</a>
-                <a href="#" class="conditions__pagination--linc1">4</a>
-                <a href="#" class="conditions__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="conditions__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="discounts">
-        <ul class="discounts-list">
-            <li class="discounts-item">
-                <p class="discounts-item__mark">Хит продаж</p>
-                <img src="img/install_bestseller.jpg" alt="Хит продаж">
-                <p class="discounts-name">Наименование</p>
-                <p class="discounts-brand">Бренд:</p>
-                <p class="discounts-country">Страна:</p>
-                <p class="discounts-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="discounts-price__list">
-                    <li class="discounts-price__item">
-                        <p class="discounts-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="discounts-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="discounts-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="discounts-price__btn">В корзину</button>
-            </li>
-            <li class="discounts-item">
-                <p class="discounts-item__mark">Новинка</p>
-                <img src="img/krepezh_bestseller.jpg" alt="Новинка">
-                <p class="discounts-name">Наименование</p>
-                <p class="discounts-brand">Бренд:</p>
-                <p class="discounts-country">Страна:</p>
-                <p class="discounts-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="discounts-price__list">
-                    <li class="discounts-price__item">
-                        <p class="discounts-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="discounts-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="discounts-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="discounts-price__btn">В корзину</button>
-            </li>
-        </ul>
-        <div class="discounts__navigation">
-            <button type="button" class="bestsellers__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="discounts__pagination--links">
-                <a href="#" class="discounts__pagination--linc1">1</a>
-                <a href="#" class="discounts__pagination--linc1">2</a>
-                <a href="#" class="discounts__pagination--linc1">3</a>
-                <a href="#" class="discounts__pagination--linc1">4</a>
-                <a href="#" class="discounts__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="discounts__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="info">
-        <img src="img/banner1.jpg" alt="image">
-        <img src="img/banner2.jpg" alt="image">
-        <div class="info__navigation">
-            <button type="button" class="info__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="info__pagination--links">
-                <a href="#" class="info__pagination--linc1">1</a>
-                <a href="#" class="info__pagination--linc1">2</a>
-                <a href="#" class="info__pagination--linc1">3</a>
-                <a href="#" class="info__pagination--linc1">4</a>
-                <a href="#" class="info__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="info__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="recommend">
-        <ul class="recommend-list">
-            <li class="recommend-item">
-                <p class="recommend-item__mark">Хит продаж</p>
-                <img src="img/install_bestseller.jpg" alt="Хит продаж">
-                <p class="recommend-name">Наименование</p>
-                <p class="recommend-brand">Бренд:</p>
-                <p class="recommend-country">Страна:</p>
-                <p class="recommend-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="recommend-price__list">
-                    <li class="recommend-price__item">
-                        <p class="recommend-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="recommend-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="recommend-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="recommend-price__btn">В корзину</button>
-            </li>
-            <li class="recommend-item">
-                <p class="recommend-item__mark">Новинка</p>
-                <img src="img/krepezh_bestseller.jpg" alt="Новинка">
-                <p class="recommend-name">Наименование</p>
-                <p class="recommend-brand">Бренд:</p>
-                <p class="recommend-country">Страна:</p>
-                <p class="recommend-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>
-                <ul class="recommend-price__list">
-                    <li class="recommend-price__item">
-                        <p class="recommend-price__value">15 000 грн.</p>
-                    </li>
-                    <li class="recommend-price__item">
-                        <img src="svg/favourite%204.svg" alt="Нравится">
-                    </li>
-                    <li class="recommend-price__item">
-                        <img src="svg/gragik.svg" alt="График">
-                    </li>
-                </ul>
-                <button type="button" class="recommend-price__btn">В корзину</button>
-            </li>
-        </ul>
-        <div class="recommend__navigation">
-            <button type="button" class="bestsellers__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="discounts__pagination--links">
-                <a href="#" class="recommend__pagination--linc1">1</a>
-                <a href="#" class="recommend__pagination--linc1">2</a>
-                <a href="#" class="recommend__pagination--linc1">3</a>
-                <a href="#" class="recommend__pagination--linc1">4</a>
-                <a href="#" class="recommend__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="recommend__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="info2">
-        <img src="img/banner3.jpg.jpg" alt="image">
-        <img src="img/banner4.jpg.jpg" alt="image">
-        <div class="info2__navigation">
-            <button type="button" class="info2__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="info2__pagination--links">
-                <a href="#" class="info2__pagination--linc1">1</a>
-                <a href="#" class="info2__pagination--linc1">2</a>
-                <a href="#" class="info2__pagination--linc1">3</a>
-                <a href="#" class="info2__pagination--linc1">4</a>
-                <a href="#" class="info2__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="info2__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="events">
-        <h2 class="events__title">Новости и события</h2>
-        <div class="events__chapter">
-            <img src="img/events.jpg" alt="image events">
-            <button type="button" class="events__btn">Перейти в раздел</button>
-        </div>
-        <article class="events__article">
-            Что может быть лучше расслабляющей ванны после тяжолого рабочего дня?
-            У нас новые постепления, найдется ванна на любой вкус.
-        </article>
-        <div class="events__navigation">
-            <button type="button" class="events__navigation--btn-left">
-                <img src="svg/hero_btn-left.svg" alt="left">
-            </button>
-            <div class="events__pagination--links">
-                <a href="#" class="events__pagination--linc1">1</a>
-                <a href="#" class="events__pagination--linc1">2</a>
-                <a href="#" class="events__pagination--linc1">3</a>
-                <a href="#" class="events__pagination--linc1">4</a>
-                <a href="#" class="events__pagination--linc1">5</a>
-            </div>
-            <button type="button" class="events__navigation--btn-right">
-                <img src="svg/hero_btn-right.svg" alt="right">
-            </button>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer__logo">
-            <img src="img/logo_header.jpg" alt="logo">
-        </div>
-        <div class="footer__social">
-            <p class="footer__social--title">Мы в социальных сетях</p>
-            <ul class="footer__social--list">
-                <li class="footer__social--item">
-                    <a href="#" class="footer__social--link">
-                        <img src="img/vk.jpg" alt="vkontacte">
-                    </a>
-                </li>
-                <li class="footer__social--item">
-                    <a href="#" class="footer__social--link">
-                        <img src="img/insta.jpg" alt="instagram">
-                    </a>
-                </li>
-                <li class="footer__social--item">
-                    <a href="#" class="footer__social--link">
-                        <img src="img/face.jpg" alt="facebook">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__pay">
-            <p class="footer__pay--title">Мы принимаем</p>
-            <ul class="footer__pay--list">
-                <li class="footer__pay--item">
-                    <a href="#" class="footer__pay--link">
-                        <img src="img/viza.jpg" alt="viza">
-                    </a>
-                </li>
-                <li class="footer__pay--item">
-                    <a href="#" class="footer__pay--link">
-                        <img src="img/mc.jpg" alt="Master Card">
-                    </a>
-                </li>
-                <li class="footer__pay--item">
-                    <a href="#" class="footer__pay--link">
-                        <img src="img/mir.jpg" alt="Mir">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <ul class="footer__contacts">
-            <li class="footer__contacts--item">
-                <a href="#" class="footer__contacts--link">
-                    <img src="svg/phone2.svg" alt="email">
-                    <span>+38 099 999 99 99</span>
-                </a>
-            </li>
-            <li class="footer__contacts--item">
-                <a href="#" class="footer__contacts--link">
-                    <img src="svg/mail.svg" alt="e-mail">
-                    <span>info@example.com</span>
-                </a>
-            </li>
-            <li class="footer__contacts--item">
-                <a href="#" class="footer__contacts--link">
-                    <img src="svg/contacts.svg" alt="address">
-                    <span>г. Киев, пр-кт. Свободы, д.39</span>
-                </a>
-            </li>
-        </ul>
-        <div class="footer__bayer">
-            <h2 class="footer__bayer--info">ПОКУПАТЕЛЮ</h2>
-            <ul class="footer__bayer--list">
-                <li class="footer__bayer--item">
-                    <a href="#" class="footer__bayer--link">
-                        <span>Доставка</span>
-                    </a>
-                </li>
-                <li class="footer__bayer--item">
-                    <a href="#" class="footer__bayer--link">
-                        <span>Оплата</span>
-                    </a>
-                </li>
-                <li class="footer__bayer--item">
-                    <a href="#" class="footer__bayer--link">
-                        <span>Гарантии и возврат</span>
-                    </a>
-                </li>
-                <li class="footer__bayer--item">
-                    <a href="#" class="footer__bayer--link">
-                        <span>Производители</span>
-                    </a>
-                </li>
-                <li class="footer__bayer--item">
-                    <a href="#" class="footer__bayer--link">
-                        <span>Статьи</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__company">
-            <h2 class="footer__company--info">КОМПАНИЯ</h2>
-            <ul class="footer__company--list">
-                <li class="footer__company--item">
-                    <a href="#" class="footer__company--link">
-                        <span>О нас</span>
-                    </a>
-                </li>
-                <li class="footer__company--item">
-                    <a href="#" class="footer__company--link">
-                        <span>Контакты</span>
-                    </a>
-                </li>
-                <li class="footer__company--item">
-                    <a href="#" class="footer__company--link">
-                        <span>Пользовательское соглашение</span>
-                    </a>
-                </li>
-                <li class="footer__company--item">
-                    <a href="#" class="footer__company--link">
-                        <span>Политика конфиденциальности</span>
-                    </a>
-                </li>
-                <li class="footer__company--item">
-                    <a href="#" class="footer__company--link">
-                        <span>Обратная связь</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__subscription">
-                <form action="#" class="footer__subscription--form">
-                    <input type="email" placeholder="Введите ваш email" required>
-                    <button type="submit" class="footer__subscription--btn">Подписаться</button>
-                </form>
-                <p class="footer__subscription--info">Станьте нашим подписчиком, чтобы быть в курсе информации о новинках и специальных предложениях.</p>
-            </div>
-        <div class="footer__navbar">
-            <ul class="footer__navbar--list">
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <span>Главная</span>
-                    </a>
-                </li>
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <span>Каталог</span>
-                    </a>
-                </li>
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <img src="svg/favourite.svg" alt="Favorite">
-                        <span>Избранное</span>
-                    </a>
-                </li>
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <img src="svg/logo.svg" alt="Logo">
-                        <span>Главная</span>
-                    </a>
-                </li>
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <img src="svg/profile.svg" alt="Profile">
-                        <span>Профиль</span>
-                    </a>
-                </li>
-                <li class="footer__navbar--item">
-                    <a href="#" class="footer__navbar--link">
-                        <img src="svg/cart%207.svg" alt="Cart">
-                        <span>Корзина</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
+<!--    <section class="stocks">-->
+<!--        <div class="stocks__title">-->
+<!--            <p>Акции</p>-->
+<!--            <p><a href="#">Все акции</a></p>-->
+<!--        </div>-->
+<!--        <ul class="stocks__list">-->
+<!--            <li class="stocks__item">-->
+<!--                <img src="img/winter_stock.jpg" alt="stocks image">-->
+<!--            </li>-->
+<!--            <li class="stocks__item">-->
+<!--                <img src="img/winter_stock.jpg" alt="stocks__img">-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="stocks__navigation">-->
+<!--            <button type="button" class="stocks__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="stocks__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">5</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">6</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">7</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">8</a>-->
+<!--                <a href="#" class="stocks__pagination&#45;&#45;linc1">...</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="stocks__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="categories">-->
+<!--        <h2 class="category">Популярные категории</h2>-->
+<!--        <ul class="category__list">-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/rakovina.png" alt="Раковина">-->
+<!--                <p class="category__name">Раковина</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/ynitaz.png" alt="Унитаз">-->
+<!--                <p class="category__name">Унитазы</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/kran.png" alt="Смесители">-->
+<!--                <p class="category__name">Смесители</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/installation.png" alt="Системы инсталяции">-->
+<!--                <p class="category__name">Системы инсталяции</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/bath.png" alt="Ванны">-->
+<!--                <p class="category__name">Ванны</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/bath_furniture.png" alt="">-->
+<!--                <p class="category__name">Мебель для ванных комнат</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/dush.png" alt="Душевые углы и ограждения">-->
+<!--                <p class="category__name">Душевые углы и ограждения</p>-->
+<!--            </li>-->
+<!--            <li class="category__item">-->
+<!--                <img src="img/acsessuar.png" alt="Аксессуары для ванных комнат">-->
+<!--                <p class="category__name">Аксессуары для ванных комнат</p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </section>-->
+<!--    <section class="bestsellers">-->
+<!--        <ul class="bestsellers-list">-->
+<!--            <li class="bestsellers-item">-->
+<!--                <p class="bestsellers-item__mark">Хит продаж</p>-->
+<!--                <img src="img/install_bestseller.jpg" alt="Хит продаж">-->
+<!--                <p class="bestsellers-name">Наименование</p>-->
+<!--                <p class="bestsellers-brand">Бренд:</p>-->
+<!--                <p class="bestsellers-country">Страна:</p>-->
+<!--                <p class="bestsellers-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="bestseller-price__list">-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <p class="bestseller-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="bestseller-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--            <li class="bestsellers-item">-->
+<!--                <p class="bestsellers-item__mark">Новинка</p>-->
+<!--                <img src="img/krepezh_bestseller.jpg" alt="Новинка">-->
+<!--                <p class="bestsellers-name">Наименование</p>-->
+<!--                <p class="bestsellers-brand">Бренд:</p>-->
+<!--                <p class="bestsellers-country">Страна:</p>-->
+<!--                <p class="bestsellers-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="bestseller-price__list">-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <p class="bestseller-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="bestseller-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="bestseller-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="bestsellers__navigation">-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="bestsellers__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">5</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">6</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">7</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">8</a>-->
+<!--                <a href="#" class="bestsellers__pagination&#45;&#45;linc1">...</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="about">-->
+<!--        <img src="img/about_fone.jpg" alt="fone">-->
+<!--        <ul class="about__list">-->
+<!--            <li class="about__item">-->
+<!--                <p class="about__brands">Брендов работают с нами</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <p class="about__naming">Наименований продукции</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">ДОСТАВКА</h3>-->
+<!--                <img src="svg/transport%204.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">Доставим товар в удобное для вас время</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">САМОВЫВОЗ</h3>-->
+<!--                <img src="svg/car%203.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">Вы можете самостоятельно забрать заказ в пункте самовывоза</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">КЛИЕНТСКИЙ СЕРВИС</h3>-->
+<!--                <img src="svg/support%203.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">Оказываем поддержку на всех этапах покупки товара</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">ГАРАНТИЯ КАЧЕСТВА</h3>-->
+<!--                <img src="svg/like.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">Соответствуем требованиям и стандартам качества</p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ</h3>-->
+<!--                <img src="svg/dashboard%202.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">У нас найдется все </p>-->
+<!--            </li>-->
+<!--            <li class="about__item">-->
+<!--                <h3 class="about__item&#45;&#45;name">АКЦИИ И СКИДКИ</h3>-->
+<!--                <img src="svg/akcii.svg" alt="icon">-->
+<!--                <p class="about__item&#45;&#45;title">Постоянным клиентам акции и скидки</p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </section>-->
+<!--    <section class="new">-->
+<!--        <ul class="new-list">-->
+<!--            <li class="new-item">-->
+<!--                <p class="new-item__mark">Хит продаж</p>-->
+<!--                <img src="img/install_bestseller.jpg" alt="Хит продаж">-->
+<!--                <p class="new-name">Наименование</p>-->
+<!--                <p class="new-brand">Бренд:</p>-->
+<!--                <p class="new-country">Страна:</p>-->
+<!--                <p class="new-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="new-price__list">-->
+<!--                    <li class="new-price__item">-->
+<!--                        <p class="new-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="new-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="new-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="new-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--            <li class="new-item">-->
+<!--                <p class="new-item__mark">Новинка</p>-->
+<!--                <img src="img/krepezh_bestseller.jpg" alt="Новинка">-->
+<!--                <p class="new-name">Наименование</p>-->
+<!--                <p class="new-brand">Бренд:</p>-->
+<!--                <p class="new-country">Страна:</p>-->
+<!--                <p class="new-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="new-price__list">-->
+<!--                    <li class="new-price__item">-->
+<!--                        <p class="new-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="new-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="new-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="new-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="new__navigation">-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="new__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="new__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="new__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="new__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="new__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="new__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="new__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="conditions">-->
+<!--        <ul class="conditions-list">-->
+<!--            <li class="conditions-item">-->
+<!--                <img src="img/brands.jpg" alt="icon">-->
+<!--                <p class="conditions-item__title">Бренды</p>-->
+<!--            </li>-->
+<!--            <li class="conditions-item">-->
+<!--                <img src="img/akcii.jpg" alt="icon">-->
+<!--                <p class="conditions-item__title">Акции</p>-->
+<!--            </li>-->
+<!--            <li class="conditions-item">-->
+<!--                <img src="img/pay.jpg" alt="icon">-->
+<!--                <p class="conditions-item__title">Оплата</p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="conditions__navigation">-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="conditions__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="conditions__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="conditions__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="conditions__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="conditions__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="conditions__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="conditions__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="discounts">-->
+<!--        <ul class="discounts-list">-->
+<!--            <li class="discounts-item">-->
+<!--                <p class="discounts-item__mark">Хит продаж</p>-->
+<!--                <img src="img/install_bestseller.jpg" alt="Хит продаж">-->
+<!--                <p class="discounts-name">Наименование</p>-->
+<!--                <p class="discounts-brand">Бренд:</p>-->
+<!--                <p class="discounts-country">Страна:</p>-->
+<!--                <p class="discounts-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="discounts-price__list">-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <p class="discounts-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="discounts-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--            <li class="discounts-item">-->
+<!--                <p class="discounts-item__mark">Новинка</p>-->
+<!--                <img src="img/krepezh_bestseller.jpg" alt="Новинка">-->
+<!--                <p class="discounts-name">Наименование</p>-->
+<!--                <p class="discounts-brand">Бренд:</p>-->
+<!--                <p class="discounts-country">Страна:</p>-->
+<!--                <p class="discounts-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="discounts-price__list">-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <p class="discounts-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="discounts-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="discounts-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="discounts__navigation">-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="discounts__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="discounts__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="discounts__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="discounts__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="discounts__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="discounts__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="discounts__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="info">-->
+<!--        <img src="img/banner1.jpg" alt="image">-->
+<!--        <img src="img/banner2.jpg" alt="image">-->
+<!--        <div class="info__navigation">-->
+<!--            <button type="button" class="info__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="info__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="info__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="info__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="info__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="info__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="info__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="info__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="recommend">-->
+<!--        <ul class="recommend-list">-->
+<!--            <li class="recommend-item">-->
+<!--                <p class="recommend-item__mark">Хит продаж</p>-->
+<!--                <img src="img/install_bestseller.jpg" alt="Хит продаж">-->
+<!--                <p class="recommend-name">Наименование</p>-->
+<!--                <p class="recommend-brand">Бренд:</p>-->
+<!--                <p class="recommend-country">Страна:</p>-->
+<!--                <p class="recommend-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="recommend-price__list">-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <p class="recommend-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="recommend-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--            <li class="recommend-item">-->
+<!--                <p class="recommend-item__mark">Новинка</p>-->
+<!--                <img src="img/krepezh_bestseller.jpg" alt="Новинка">-->
+<!--                <p class="recommend-name">Наименование</p>-->
+<!--                <p class="recommend-brand">Бренд:</p>-->
+<!--                <p class="recommend-country">Страна:</p>-->
+<!--                <p class="recommend-inStock">В наличии <img src="svg/Vector.svg" alt="в наличии"></p>-->
+<!--                <ul class="recommend-price__list">-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <p class="recommend-price__value">15 000 грн.</p>-->
+<!--                    </li>-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <img src="svg/favourite%204.svg" alt="Нравится">-->
+<!--                    </li>-->
+<!--                    <li class="recommend-price__item">-->
+<!--                        <img src="svg/gragik.svg" alt="График">-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <button type="button" class="recommend-price__btn">В корзину</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="recommend__navigation">-->
+<!--            <button type="button" class="bestsellers__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="discounts__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="recommend__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="recommend__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="recommend__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="recommend__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="recommend__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="recommend__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="info2">-->
+<!--        <img src="img/banner3.jpg" alt="image">-->
+<!--        <img src="img/banner4.jpg" alt="image">-->
+<!--        <div class="info2__navigation">-->
+<!--            <button type="button" class="info2__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="info2__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="info2__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="info2__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="info2__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="info2__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="info2__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="info2__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="events">-->
+<!--        <h2 class="events__title">Новости и события</h2>-->
+<!--        <div class="events__chapter">-->
+<!--            <img src="img/events.jpg" alt="image events">-->
+<!--            <button type="button" class="events__btn">Перейти в раздел</button>-->
+<!--        </div>-->
+<!--        <article class="events__article">-->
+<!--            Что может быть лучше расслабляющей ванны после тяжолого рабочего дня?-->
+<!--            У нас новые постепления, найдется ванна на любой вкус.-->
+<!--        </article>-->
+<!--        <div class="events__navigation">-->
+<!--            <button type="button" class="events__navigation&#45;&#45;btn-left">-->
+<!--                <img src="svg/hero_btn-left.svg" alt="left">-->
+<!--            </button>-->
+<!--            <div class="events__pagination&#45;&#45;links">-->
+<!--                <a href="#" class="events__pagination&#45;&#45;linc1">1</a>-->
+<!--                <a href="#" class="events__pagination&#45;&#45;linc1">2</a>-->
+<!--                <a href="#" class="events__pagination&#45;&#45;linc1">3</a>-->
+<!--                <a href="#" class="events__pagination&#45;&#45;linc1">4</a>-->
+<!--                <a href="#" class="events__pagination&#45;&#45;linc1">5</a>-->
+<!--            </div>-->
+<!--            <button type="button" class="events__navigation&#45;&#45;btn-right">-->
+<!--                <img src="svg/hero_btn-right.svg" alt="right">-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="footer">-->
+<!--        <div class="footer__logo">-->
+<!--            <img src="img/logo_header.jpg" alt="logo">-->
+<!--        </div>-->
+<!--        <div class="footer__social">-->
+<!--            <p class="footer__social&#45;&#45;title">Мы в социальных сетях</p>-->
+<!--            <ul class="footer__social&#45;&#45;list">-->
+<!--                <li class="footer__social&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__social&#45;&#45;link">-->
+<!--                        <img src="img/vk.jpg" alt="vkontacte">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__social&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__social&#45;&#45;link">-->
+<!--                        <img src="img/insta.jpg" alt="instagram">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__social&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__social&#45;&#45;link">-->
+<!--                        <img src="img/face.jpg" alt="facebook">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="footer__pay">-->
+<!--            <p class="footer__pay&#45;&#45;title">Мы принимаем</p>-->
+<!--            <ul class="footer__pay&#45;&#45;list">-->
+<!--                <li class="footer__pay&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__pay&#45;&#45;link">-->
+<!--                        <img src="img/viza.jpg" alt="viza">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__pay&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__pay&#45;&#45;link">-->
+<!--                        <img src="img/mc.jpg" alt="Master Card">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__pay&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__pay&#45;&#45;link">-->
+<!--                        <img src="img/mir.jpg" alt="Mir">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <ul class="footer__contacts">-->
+<!--            <li class="footer__contacts&#45;&#45;item">-->
+<!--                <a href="#" class="footer__contacts&#45;&#45;link">-->
+<!--                    <img src="svg/phone2.svg" alt="email">-->
+<!--                    <span>+38 099 999 99 99</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="footer__contacts&#45;&#45;item">-->
+<!--                <a href="#" class="footer__contacts&#45;&#45;link">-->
+<!--                    <img src="svg/mail.svg" alt="e-mail">-->
+<!--                    <span>info@example.com</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="footer__contacts&#45;&#45;item">-->
+<!--                <a href="#" class="footer__contacts&#45;&#45;link">-->
+<!--                    <img src="svg/contacts.svg" alt="address">-->
+<!--                    <span>г. Киев, пр-кт. Свободы, д.39</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="footer__bayer">-->
+<!--            <h2 class="footer__bayer&#45;&#45;info">ПОКУПАТЕЛЮ</h2>-->
+<!--            <ul class="footer__bayer&#45;&#45;list">-->
+<!--                <li class="footer__bayer&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__bayer&#45;&#45;link">-->
+<!--                        <span>Доставка</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__bayer&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__bayer&#45;&#45;link">-->
+<!--                        <span>Оплата</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__bayer&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__bayer&#45;&#45;link">-->
+<!--                        <span>Гарантии и возврат</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__bayer&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__bayer&#45;&#45;link">-->
+<!--                        <span>Производители</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__bayer&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__bayer&#45;&#45;link">-->
+<!--                        <span>Статьи</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="footer__company">-->
+<!--            <h2 class="footer__company&#45;&#45;info">КОМПАНИЯ</h2>-->
+<!--            <ul class="footer__company&#45;&#45;list">-->
+<!--                <li class="footer__company&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__company&#45;&#45;link">-->
+<!--                        <span>О нас</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__company&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__company&#45;&#45;link">-->
+<!--                        <span>Контакты</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__company&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__company&#45;&#45;link">-->
+<!--                        <span>Пользовательское соглашение</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__company&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__company&#45;&#45;link">-->
+<!--                        <span>Политика конфиденциальности</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__company&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__company&#45;&#45;link">-->
+<!--                        <span>Обратная связь</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="footer__subscription">-->
+<!--                <form action="#" class="footer__subscription&#45;&#45;form">-->
+<!--                    <input type="email" placeholder="Введите ваш email" required>-->
+<!--                    <button type="submit" class="footer__subscription&#45;&#45;btn">Подписаться</button>-->
+<!--                </form>-->
+<!--                <p class="footer__subscription&#45;&#45;info">Станьте нашим подписчиком, чтобы быть в курсе информации о новинках и специальных предложениях.</p>-->
+<!--            </div>-->
+<!--        <div class="footer__navbar">-->
+<!--            <ul class="footer__navbar&#45;&#45;list">-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <span>Главная</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <span>Каталог</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <img src="svg/favourite.svg" alt="Favorite">-->
+<!--                        <span>Избранное</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <img src="svg/logo.svg" alt="Logo">-->
+<!--                        <span>Главная</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <img src="svg/profile.svg" alt="Profile">-->
+<!--                        <span>Профиль</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="footer__navbar&#45;&#45;item">-->
+<!--                    <a href="#" class="footer__navbar&#45;&#45;link">-->
+<!--                        <img src="svg/cart%207.svg" alt="Cart">-->
+<!--                        <span>Корзина</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
 </body>
 </html>
