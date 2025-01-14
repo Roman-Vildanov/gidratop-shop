@@ -1,6 +1,5 @@
 img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -8,6 +7,8 @@ body {
     width: 375px;
     margin: 0 15px;
 }
+
+/*--------Header--------*/
 
 .header {
     margin: 15px 0;
@@ -34,8 +35,6 @@ body {
     margin-right: 20px;
 }
 
-/*----------------*/
-
 .header__search {
     display: flex;
     align-items: center;
@@ -45,7 +44,6 @@ body {
 
 .header__search img {
     width: 20px;
-    margin-right: 7px;
 }
 
 .header__search--catalog {
@@ -58,6 +56,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: #4798DE;
+    margin-left: 7px;
 }
 
 .header__search--input {
@@ -86,7 +85,7 @@ input[type="text"] {
     cursor: pointer;
 }
 
-/*----------------*/
+/*------Hero----------*/
 
 .hero {
     margin-bottom: 60px;
@@ -166,8 +165,161 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .hero__pagination button:not(:last-child) {
     margin-right: 5px;
+}
+
+/*-------Stocks---------*/
+
+.stocks__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stocks__title p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stocks__title--text{
+    position: relative;
+
+}
+
+.stocks__title--text::after{
+    content: 'Stocks';
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: lightgray;
+    top: -25px;
+    right: -125px;
+    z-index: -1;
+}
+
+.stocks__title a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.stocks {
+    overflow-x: hidden;
+}
+
+.stocks__list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scrollbar-color: #ccc transparent;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.stocks__item {
+    flex: 0 0 auto;
+    width: 220px;
+    position: relative;
+}
+
+.stocks__item img {
+    width: 100%;
+    height: auto;
+}
+
+.stocks__navigation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.stocks__navigation--btn-left {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.stocks__navigation--btn-right {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.stocks__navigation button {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+}
+
+/*-------Categories---------*/
+
+.categories {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.category::after {
+    content: 'Categories';
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: lightgray;
+    top: -25px;
+    right: 80px;
+    z-index: -1;
+}
+
+.category__list {
+    display: grid; /* Используем grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+    gap: 20px; /* Расстояние между элементами */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы списка */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.category__item {
+    position: relative;
+    width: 160px;
+    height: 146px; /* Высота картинок */
+    text-align: center;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.category__item img {
+    object-fit: contain;
+    background: transparent;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.category__name {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    right: 0;
+    font-size: 16px; /* Размер текста */
+    color: blue; /* Цвет текста */
+    margin-top: 10px;
 }
