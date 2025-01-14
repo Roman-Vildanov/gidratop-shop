@@ -266,10 +266,6 @@ input[type="text"] {
 
 /*-------Categories---------*/
 
-.categories {
-    padding: 20px;
-}
-
 .category {
     margin-bottom: 30px;
     font-size: 18px;
@@ -290,21 +286,28 @@ input[type="text"] {
 }
 
 .category__list {
-    display: grid; /* Используем grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
-    gap: 20px; /* Расстояние между элементами */
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы списка */
-    margin: 0; /* Убираем внешние отступы */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+
+
+    margin-bottom: 60px;
 }
 
 .category__item {
     position: relative;
-    width: 160px;
+    width: calc(50% - 10px);
     height: 146px; /* Высота картинок */
     text-align: center;
     border-radius: 5px;
     background-color: lightgray;
+}
+
+.category__item:hover {
+    box-shadow: 4px 4px 4px rgba(0, 123, 255, 0.5);
+    transition: box-shadow 0.3s ease;
 }
 
 .category__item img {
@@ -319,7 +322,149 @@ input[type="text"] {
     width: 100%;
     bottom: 5px;
     right: 0;
-    font-size: 16px; /* Размер текста */
-    color: blue; /* Цвет текста */
+    font-size: 16px;
+    color: blue;
     margin-top: 10px;
+}
+
+/*-------Bestsellers---------*/
+
+.bestsellers__hit {
+    position: relative;
+
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bestsellers__hit::after {
+    content: 'Bestsellers';
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: lightgray;
+    top: -15px;
+    right: 95px;
+    z-index: -1;
+}
+
+.bestsellers-list {
+    display: flex;
+}
+
+.bestsellers-item {
+    position: relative;
+    width: calc(50% - 10px);
+    margin-bottom: 25px;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.bestsellers-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.bestsellers-item:hover {
+    box-shadow: 4px 4px 4px rgba(0, 123, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.bestsellers-item img {
+    margin-bottom: 15px;
+}
+
+.green {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    background-color: #6CDB7E;
+    border-radius: 5px;
+}
+
+.blue {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.bestsellers-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.bestsellers-brand, .bestsellers-country {
+    font-size: 12px;
+    color: grey;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+.bestsellers-inStock {
+    display: flex;
+    font-size: 12px;
+    color: blue;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.bestsellers-inStock img {
+    margin-left: 5px;
+}
+
+.bestseller-price__list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.bestseller-price__value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bestseller-price__btn {
+    margin-bottom: 15px;
+    margin-left: 45px;
+    padding: 5px 10px;
+    background-color: #4798DE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bestsellers__navigation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bestsellers__navigation button {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+}
+
+/*-------About---------*/
+
+.about {
+    background-image: url(./img/about_fone.jpg);
 }
